@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.design-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -9;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+.line-right1 {
+    position: absolute;
+    top: 30em;
+    left: -8%;
+    border-radius: 0 30px 30px 0;
+    height: 50px;
+    width: 40%;
+    background-color: #F2B0AD;
+    transform: rotate(-30deg);
+}
+
+.line-right2 {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    border-radius: 30px;
+    height: 35px;
+    width: 40%;
+    background-color: #E17F55;
+    transform: rotate(-30deg);
+}
+
+.line-left1 {
+    position: absolute;
+    top: 70%;
+    float: right;
+    right: -5%;
+    border-radius: 30px;
+    height: 40px;
+    width: 30%;
+    background-color: #bcd9fc;
+    transform: rotate(-30deg);
+}
+
+.line-left2 {
+    right: -10%;
+    position: absolute;
+    top: 10%;
+    border-radius: 30px;
+    height: 35px;
+    width: 30%;
+    background-color: #F4C243;
+    transform: rotate(-30deg);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0px;
+    color: seagreen;
+}
+
+h1:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.start-quiz-btnn {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    background-color: seagreen;
+    color: white;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: .3s;
+    width: 25%;
+    border: 2px solid seagreen;
+}
+
+.start-quiz-btnn:hover {
+    color: seagreen;
+    background-color: white;
+}
+
+.sign-btns {
+    margin-top: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.signup-btnn {
+    background-color: #3F6095;
+    color: white;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: .3s;
+    width: 45%;
+    border: 2px solid #3F6095;
+}
+
+.signup-btnn:hover {
+    background-color: white;
+    color: #3F6095;
+}
+
+@media (max-width:876px) {
+    .start-quiz-btnn {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .signup-btnn {
+        border-radius: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:681px) {
+    .start-quiz-btnn {
+        width: 40%;
+        font-size: 1rem;
+        padding: 15px;
+        border-radius: 30px;
+        font-size: .9rem;
+    }
+
+    .sign-btns {
+        display: block;
+    }
+
+    .signup-btnn {
+        margin: 6px 0;
+        width: 90%;
+        border-radius: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .start-quiz-btnn {
+        width: 50%;
+        font-size: 1rem;
+        padding: 15px;
+        border-radius: 30px;
+        font-size: .9rem;
+    }
+
+    .sign-btns {
+        display: block;
+
+    }
+
+    .signup-btnn {
+        width: 100%;
+        margin: 6px 0;
+        border-radius: 30px;
+        padding: 10px;
+    }
+}

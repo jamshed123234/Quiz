@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/quiz.css">
+    <link rel="stylesheet" href="/Css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="design-container">
+        <div class="line-right1"></div>
+        <div class="line-right2"></div>
+        <div class="line-left1"></div>
+        <div class="line-left2"></div>
+    </div>
+    <div class="container">
+
+        <h5>Score:100</h5>
+
+        <div id="pageBeginCountdownText" class="second shadow">
+            <h1 id="countdown">15</h1>
+        </div>
+
+        <div id="QuizBox" class="shadow box">
+            <h4 id="question">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti et, aspernatur
+                expedita, paria nisi nemo sit molestiae!</h4>
+            <div class="option-box g-3 row m-0">
+
+                
+                <input type="radio" class="btn-check" name="radio btns"  value="ption1" id="option1">
+                <label for="option1" class="btn btn-outline-success col-sm-6">optiot1</label>
+
+                <input type="radio" class="btn-check" name="radio btns" value="option2" id="option2">
+                <label for="option2" class="btn btn-outline-success col-sm-6">optiot1</label>
+
+                <input type="radio" class="btn-check" name="radio btns" value="option3" id="option3">
+                <label for="option3" class="btn btn-outline-success col-sm-6">optiot1</label>
+
+                <input type="radio" class="btn-check" name="radio btns" value="option4" id="option4">
+                <label for="option4" class="btn btn-outline-success col-sm-6">optiot1</label>
+
+            </div>
+        </div>
+        <div class="next-div">
+            <div id="previous"><button>previous</button></div>
+            <h1 id="result"></h1>
+            <div id="next"><button >Next</button></div>
+
+        </div>
+
+    </div>
+    
+    <script>
+        var btn = document.getElementById("next")
+        var result = document.getElementById("result")
+        
+        btn.addEventListener("click",()=>{
+             var selected = document.querySelector(`input[name="radio btns"]:checked`)
+            result.innerHTML = selected.value
+        })
+
+
+      
+    </script>
+    <script src="/Js/quiz.js"></script>
+</body> 
+
+</html>
